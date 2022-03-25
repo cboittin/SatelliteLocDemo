@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SatelliteLocDemo", "SatelliteLocDemo.csproj", "{DC48DF4F-7A26-4E33-8B5B-F34709A06EBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC48DF4F-7A26-4E33-8B5B-F34709A06EBE}.Debug|x64.ActiveCfg = Debug|x64
+		{DC48DF4F-7A26-4E33-8B5B-F34709A06EBE}.Debug|x64.Build.0 = Debug|x64
+		{DC48DF4F-7A26-4E33-8B5B-F34709A06EBE}.Release|x64.ActiveCfg = Release|x64
+		{DC48DF4F-7A26-4E33-8B5B-F34709A06EBE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9DED08E-05CF-4086-ABFD-5658A9EB68DB}
+	EndGlobalSection
+EndGlobal
