@@ -18,14 +18,19 @@
             AppDomain.CurrentDomain.AssemblyResolve += this.CurrentDomain_AssemblyResolve;
         }
 
+        public static string GetBasePath()
+        {
+            using ProcessModule processModule = Process.GetCurrentProcess().MainModule;
+            return Path.GetDirectoryName(processModule?.FileName)!;
+        }
+
         private Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
         {
             try
             {
                 if (args.Name != null && args.Name.StartsWith("SatelliteLocDemo.resources"))
                 {
-                    //string assemblyPath = $"{GetBasePath()}\\{Thread.CurrentThread.CurrentUICulture.Name}\\SatelliteLocDemo.resources.dll";
-                    string assemblyPath = $"{AppDomain.CurrentDomain.BaseDirectory}\\Languages\\{Thread.CurrentThread.CurrentUICulture.Name}\\SatelliteLocDemo.resources.dll";
+                    string assemblyPath = $"{GetBasePath()}\\Languages\\{Thread.CurrentThread.CurrentUICulture.Name}\\SatelliteLocDemo.resources.dll";
                     Assembly assembly = Assembly.LoadFrom(assemblyPath);
                     return assembly;
                 }
